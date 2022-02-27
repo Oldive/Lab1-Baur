@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <welcome-file-list>
+        <welcome-file>ServletCountry</welcome-file>
+    </welcome-file-list>
+
+<servlet>
+    <servlet-name>ServletCountry</servlet-name>
+    <servlet-class>com.baur.qwertybaaur.ServletCountry</servlet-class>
+</servlet>
+
+    <servlet>
+        <servlet-name>ServletCountryInformation</servlet-name>
+        <servlet-class>com.baur.qwertybaaur.ServletCountryInformation</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletCountryLanguage</servlet-name>
+        <servlet-class>com.baur.qwertybaaur.ServletCountryLanguage</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletFLag</servlet-name>
+        <servlet-class>com.baur.qwertybaaur.ServletFLag</servlet-class>
+    </servlet>
+
+<servlet-mapping>
+    <servlet-name>ServletCountry</servlet-name>
+    <url-pattern>/list</url-pattern>
+</servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ServletCountryInformation</servlet-name>
+        <url-pattern>/inf</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ServletCountryLanguage</servlet-name>
+        <url-pattern>/languages</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ServletFLag</servlet-name>
+        <url-pattern>/flag</url-pattern>
+    </servlet-mapping>
+</web-app>
